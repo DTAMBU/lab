@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: Checkout Repo ⚡️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build recipe 🛠
         run: docker build --rm --force-rm --tag my-custom-image -f ./${{ matrix.dockerfile }} ./
